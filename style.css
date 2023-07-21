@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(163, 112, 245), rgb(69, 57, 184));
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    background-color: white;
+    padding: 40px;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 80px;
+    display: flex;
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 8px 1px rgb(53, 53, 53);
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #table {
+        margin-left: 0;
+    }
+
+    #height-us {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        flex-grow: 1;
+        display: flex;
+
+    }
+
+    #height-us :first-child {
+        margin-bottom: 8px;
+    }
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.form-control label {
+    width: 56px;
+}
+
+.input {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+    flex-grow: 1;
+    display: flex;
+    margin-left: 8px;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    -moz-appearance: textfield;
+    flex-grow: 1;
+}
+
+.input span {
+    color: rgb(125, 125, 139);
+}
+
+button {
+    color: white;
+    background-color: rgb(108, 30, 253);
+    outline: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #261c81;
+}
+
+#bmi {
+    text-align: center;
+    margin: 14px 0;
+    font-size: 24px;
+}
+
+table {
+    margin-left: 30px;
+}
+
+table,
+td,
+th {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+tr {
+    transition: background-color 2s;
+}
+
+.outlined {
+    background-color: rgb(193, 226, 255);
+}

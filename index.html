@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+    </header>
+    <main>
+        <div id="content">
+            <form>
+                <div class="form-control">
+                    <label for="units">Units</label>
+                    <div id="units">
+                        <input type="radio" name="unit" value="METRIC" checked>
+                        <span>Metric</span>
+                        <input type="radio" name="unit" value="US">
+                        <span>US</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="age">Age</label>
+                    <div class="input">
+                        <input id="age" type="number" />
+                        <span>years</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="height">Height</label>
+                    <div id="height-us">
+                        <div class="input">
+                            <input id="feet" type="number" />
+                            <span id="height-unit">feet</span>
+                        </div>
+                        <div class="input">
+                            <input id="inches" type="number" />
+                            <span id="height-unit">inches</span>
+                        </div>
+                    </div>
+                    <div class="input" id="height-metric">
+                        <input id="height" type="number" />
+                        <span id="height-unit">cm</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="weight">Weight</label>
+                    <div class="input">
+                        <input id="weight" type="number" />
+                        <span id="weight-unit">kg</span>
+                    </div>
+                </div>
+                <button type="submit" id="submit">Calculate</button>
+            </form>
+            <p id="bmi"></p>
+        </div>
+        <table id="table">
+            <tr>
+                <th>Classification</th>
+                <th>BMI range</th>
+            </tr>
+            <tr>
+                <td>Severe Thinness</td>
+                <td>
+                    < 16</td>
+            </tr>
+            <tr>
+                <td>Moderate Thinness</td>
+                <td>16 - 17</td>
+            </tr>
+            <tr>
+                <td>Mild Thinness</td>
+                <td>17 - 18.5</td>
+            </tr>
+            <tr>
+                <td>Normal</td>
+                <td>18.5 - 25</td>
+            </tr>
+            <tr>
+                <td>Overweight</td>
+                <td>25 - 30</td>
+            </tr>
+            <tr>
+                <td>Obese Class I</td>
+                <td>30 - 35</td>
+            </tr>
+            <tr>
+                <td>Obese Class II</td>
+                <td>35 - 40</td>
+            </tr>
+            <tr>
+                <td>Obese Class III</td>
+                <td>> 40</td>
+            </tr>
+        </table>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
